@@ -292,7 +292,7 @@ end
 
 function TrinketMenu.TrinketNearReady(id)
 	local start, duration = GetItemCooldown(id)
-	if start == 0 or duration - (GetTime() - start) <= 30 then
+	if start == 0 or duration - (GetTime() - start) <= 50 then
 		return 1
 	end
 end
